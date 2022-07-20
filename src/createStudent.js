@@ -16,7 +16,6 @@
 */
 
 const createStudent = (nome) => {
-
   if (!nome || typeof nome !== 'string') { return undefined; }
   const student = {
     name: nome,
