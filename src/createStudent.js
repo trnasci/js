@@ -21,7 +21,7 @@ const createStudent = (nome) => {
 
   const estudante = { name: nome };
   
-  estudante.feedback = feedback();
+  estudante.feedback = `${feedback()}`;
   
   return estudante;
 };
