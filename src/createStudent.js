@@ -16,15 +16,14 @@
 */
 
 const createStudent = (nome) => {
-  const feedback = () => 'Eita pessoa boa!';
-  if (!nome || typeof nome !== 'string') { return undefined; }
 
-  const estudante = { name: nome };
-  
-  estudante.feedback = `${feedback()}`;
-  
-  return estudante;
+  if (!nome || typeof nome !== 'string') { return undefined; }
+  const student = {
+    name: nome,
+    feedback: () => 'Eita pessoa boa!',
+  };
+  return student;
 };
 
-console.log(createStudent('Thiago'));
+console.log(createStudent(5));
 module.exports = createStudent;
